@@ -1,0 +1,207 @@
+@import url(/css/utils.css);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter;
+}
+.container {
+  margin: 85px auto;
+  max-width: 1200px;
+  border-radius: 2rem;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+.logo__wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo__img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo__title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 180px;
+  height: 24px;
+  top: 128px;
+  left: 186px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__desc {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 189px;
+  height: 17px;
+  top: 152px;
+  left: 186px;
+  color: #9d9d9d;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav__item {
+  display: flex;
+  gap: 0.7rem;
+  color: rgb(92, 92, 92);
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  border: 1px solid rgb(212, 212, 212);
+}
+main {
+  padding: 0 4rem 4rem;
+}
+.container__search {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 2rem 0;
+}
+.search__title {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+}
+.wrapper__search {
+  position: relative;
+}
+
+.input__search {
+  width: 250px;
+  height: 45px;
+
+  border-radius: 10px;
+  border: 1px solid rgb(212, 212, 212);
+  padding: 1rem 1rem 1rem 3rem;
+}
+
+.button__search {
+  position: absolute;
+  left: 15px;
+  border: none;
+  transform: translateY(50%);
+}
+
+.container__shoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.shoes__item {
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 40px;
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  width: 180px;
+}
+
+.shoes__inner1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px 30px;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 40px;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+}
+.shoes__inner1:hover {
+  -webkit-box-shadow: 2px 19px 10px 8px rgba(34, 60, 80, 0.08);
+  -moz-box-shadow: 2px 19px 10px 8px rgba(34, 60, 80, 0.08);
+  box-shadow: 2px 19px 10px 8px rgba(34, 60, 80, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.shoes__text {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 150px;
+  height: 34px;
+}
+
+.shoes__price1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+.text__price {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.price__text {
+  color: rgb(189, 189, 189);
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.price__numbers {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0%;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+.img__shoes {
+  height: 112px;
+  width: 133px;
+}
+.prica-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
