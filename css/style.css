@@ -11,6 +11,7 @@
 
 body {
   font-family: Inter;
+  padding: 0 15px;
 }
 .container {
   margin: 85px auto;
@@ -82,7 +83,7 @@ body {
 hr {
   height: 1px;
   width: 100%;
-  border: 1px solid rgb(212, 212, 212);
+  border: 1px solid rgb(243, 243, 243);
 }
 main {
   padding: 0 4rem 4rem;
@@ -90,21 +91,23 @@ main {
 .container__search {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
 }
 .search__title {
   color: rgb(0, 0, 0);
   font-family: Inter;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 39px;
+  width: 100%;
 }
 .wrapper__search {
   position: relative;
+  width: 450px;
 }
 
 .input__search {
-  width: 250px;
+  width: 100%;
   height: 45px;
 
   border-radius: 10px;
@@ -121,8 +124,9 @@ main {
 
 .container__shoes {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 40px;
+  place-items: center;
 }
 
 .shoes__item {
@@ -137,6 +141,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
+  width: 200px;
   padding: 20px 30px;
   border: 1px solid rgb(243, 243, 243);
   border-radius: 40px;
@@ -147,7 +153,7 @@ main {
   -webkit-box-shadow: 2px 19px 10px 8px rgba(34, 60, 80, 0.08);
   -moz-box-shadow: 2px 19px 10px 8px rgba(34, 60, 80, 0.08);
   box-shadow: 2px 19px 10px 8px rgba(34, 60, 80, 0.08);
-  transition: all 0.3s ease-in-out;
+  transform: translateY(-6px);
 }
 
 .shoes__text {
@@ -204,4 +210,66 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (max-width: 825px) {
+  .nav__text {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .search__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 625px) {
+  main {
+    padding: 0 2rem;
+  }
+  .container__search {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+  .input__search {
+    width: 100%;
+  }
+  .wrapper__search {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container__shoes {
+    align-items: center;
+  }
+  .search__title {
+    font-size: 15px;
+  }
+  .header__inner {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .header__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .search__title {
+    display: none;
+  }
+  .container__search {
+    align-items: center;
+    width: 100%;
+  }
+  .header__inner {
+    padding: 1rem;
+  }
+
+  .input__search {
+    width: 100%;
+  }
 }
